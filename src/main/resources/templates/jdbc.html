@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JDBC</title>
+</head>
+<body>
+  <h2>Contributions</h2>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Name</th>
+        <th scope="col">Description</th>
+        <th scope="col">Price</th>
+        <th scope="col">Date</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr th:each="contribution : ${contributions}">
+        <td th:text="${contribution.id}"></td>
+        <td th:text="${contribution.name}"></td>
+        <td th:text="${contribution.desc}"></td>
+        <td th:text="${contribution.price}"></td>
+        <td th:text="${contribution.date}"></td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>

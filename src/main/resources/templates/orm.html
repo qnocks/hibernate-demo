@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ORM</title>
+</head>
+<body>
+<h2>Owner</h2>
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th scope="col">ID</th>
+        <th scope="col">FirstName</th>
+        <th scope="col">SecondName</th>
+        <th scope="col">Patronymic</th>
+        <th scope="col">BirthDate</th>
+        <th scope="col">Phone</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="owner : ${owners}">
+        <td th:text="${owner.id}"></td>
+        <td th:text="${owner.firstName}"></td>
+        <td th:text="${owner.secondName}"></td>
+        <td th:text="${owner.patronymic}"></td>
+        <td th:text="${owner.birthDate}"></td>
+        <td th:text="${owner.phone}"></td>
+    </tr>
+    </tbody>
+</body>
+</html>
