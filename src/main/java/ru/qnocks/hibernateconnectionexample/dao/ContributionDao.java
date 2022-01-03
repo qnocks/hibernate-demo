@@ -19,6 +19,11 @@ public class ContributionDao implements CrudDao<Contribution, Long> {
     private final String PASSWORD = "qnocks";
 
     @Override
+    public Iterable<Contribution> findAll() {
+        return executeFindAll("SELECT * FROM contribution");
+    }
+
+    @Override
     public void save(Contribution entity) {
     }
 
@@ -33,11 +38,6 @@ public class ContributionDao implements CrudDao<Contribution, Long> {
     @Override
     public Contribution findById(Long id) {
         return null;
-    }
-
-    @Override
-    public Iterable<Contribution> findAll() {
-       return executeFindAll("SELECT * FROM contribution");
     }
 
     private List<Contribution> executeFindAll(String query) {

@@ -33,5 +33,9 @@ public class JdbcMain {
         f.setSize(500, 250);
         f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         f.setVisible(true);
+
+        stm.close();
+        res.close();
+        con.close();
     }
 }
