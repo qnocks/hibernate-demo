@@ -1,4 +1,6 @@
-# Задание
+# Hibernate demo
+
+[![Build Status](https://travis-ci.org/spring/spring.svg?branch=develop)](https://travis-ci.org/spring/spring)
 
 **Лабораторная работа №8 Проектирование взаимодействия базы данных и
 приложения**
